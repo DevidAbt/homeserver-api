@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon src/app.ts",
     "build": "tsc",
-    "start": "node build/src/app.ts"
+    "start": "node build/src/app.js"
   },
   "dependencies": {
     "express": "^4.17.3",
