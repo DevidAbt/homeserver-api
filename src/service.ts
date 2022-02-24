@@ -17,7 +17,7 @@ const temp = () => {
     SYSTIN: sensors["nct6791-isa-0290"].SYSTIN.temp1_input,
     CPUTIN: sensors["nct6791-isa-0290"].CPUTIN.temp2_input,
     GPU: sensors["nouveau-pci-0100"].temp1.temp1_input,
-    ...hddtemp,
+    disks: hddtemp,
   };
 };
 
