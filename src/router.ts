@@ -7,4 +7,6 @@ router.get("/status", controller.status);
 
 router.get("/temp", controller.temp);
 
+router.get("/suspend", controller.suspend);
+
 export default router;

@@ -1,4 +1,4 @@
-import { execSync } from "child_process";
+import { exec, execSync } from "child_process";
 
 const temp = () => {
   const sensors = JSON.parse(Buffer.from(execSync("sensors -j")).toString());
@@ -21,4 +21,6 @@ const temp = () => {
   };
 };
 
-export default { temp };
+const suspend = () => exec("sleep 3; sudo pm-suspend");
+
+export default { temp, suspend };
