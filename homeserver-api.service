@@ -1,0 +1,12 @@
+[Service]
+ExecStart=npm --prefix /home/devid/programs/homeserver-api run start
+Restart=always
+User=devid
+Group=nogroup
+Environment=PATH=/usr/bin:/usr/local/bin
+Environment=NODE_ENV=production
+WorkingDirectory=/home/devid/programs/homeserver-api
+Environment="PORT=8080"
+
+[Install]
+WantedBy=multi-user.target
